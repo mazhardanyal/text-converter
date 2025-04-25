@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Modern gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    transition: color 0.3s ease-in-out;
+}
+
+.hero h1 span {
+    color: #ff6600; /* Accent color */
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    color: #f8f8f8;
+    font-size: 1rem;
+    background-color: #333;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea::placeholder {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+textarea:focus {
+    background-color: #444;
+    box-shadow: 0 0 10px #ff6600;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+select {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+select:focus {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
